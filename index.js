@@ -2,7 +2,7 @@ const express = require('express')
 const {WebhookClient} = require('dialogflow-fulfillment');
 
 const app = express()
-app.use(app.json())
+app.use(express.json())
 const port = process.env.PORT || 3000
 
 app.post('/dialogflow-fulfillment', (request, response) => {
